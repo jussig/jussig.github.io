@@ -9,9 +9,9 @@
 
 <script> 
     let agent = navigator.userAgent;  
-    if (agent.toLowerCase().indexOf('iphone') >= 0) {
+    if (agent.indexOf('iPhone') >= 0) {
         window.location.replace("https://apps.apple.com/us/app/sartorius-service-connect/id1554232112");
-    } else if (agent.toLowerCase().indexOf('android') >= 0) {
+    } else if (agent.indexOf('Android') >= 0) {
         window.location.href("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.sartorius.lpsservice" rel="external");
     }
 </script>
