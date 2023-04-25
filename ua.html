@@ -2,17 +2,17 @@
 <html>
 <body>
 
-<h1>The Window Navigator Object</h1>
-<h2>The userAgent Property</h2>
+<h1>Thanks for downloading the app!</h1>
 
-<p id="demo"></p>
+
+<p id="download"></p>
 
 <script> 
     let agent = navigator.userAgent;  
-    if (agent.indexOf('iPhone') >= 0) {
+    if (agent.toLowerCase().indexOf('iPhone') >= 0) {
         window.location.replace("https://apps.apple.com/us/app/sartorius-service-connect/id1554232112");
-    } else if (agent.indexOf('Android') >= 0) {
-        window.location.replace("https://play.google.com/store/apps/details?id=com.sartorius.lpsservice");
+    } else if (agent.toLowerCase().indexOf('Android') >= 0) {
+        window.location.href("https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.sartorius.lpsservice");
     }
 </script>
 
