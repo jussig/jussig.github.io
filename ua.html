@@ -8,14 +8,14 @@
 <p id="download"></p>
 
 <script> 
-    let agent = navigator.userAgent.toLowerCase;
+    let agent = navigator.userAgent.toLowerCase();
     console.log("Agent ", agent)  
     if (agent.indexOf('iphone') >= 0) {
         console.log("IPHONE")
-        window.location.replace("https://apps.apple.com/us/app/sartorius-service-connect/id1554232112");
+        location.replace("https://apps.apple.com/us/app/sartorius-service-connect/id1554232112");
     } else if (agent.indexOf('android') >= 0) {
         console.log("ANDROID")
-        window.location.href="https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.sartorius.lpsservice";
+        location.href="https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.sartorius.lpsservice";
     }
 </script>
 
