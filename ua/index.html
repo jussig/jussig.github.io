@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Download Sartorius Pipetting</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+		}
+		header {
+			background-color: #2d3436;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			font-size: 36px;
+			margin: 0;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+		.app-icon {
+			width: 150px;
+			height: 150px;
+			margin: 20px;
+		}
+		.download-link {
+			color: #fff;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 24px;
+			margin: 20px;
+			text-decoration: none;
+			display: inline-block;
+			transition: all 0.3s ease;
+		}
+		.download-link:hover {
+			background-color: #2c3e50;
+		}
+		@media screen and (max-width: 600px) {
+			.app-icon {
+				width: 100px;
+				height: 100px;
+			}
+			.download-link {
+				font-size: 18px;
+				padding: 8px 16px;
+				margin: 10px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Download Sartorius Pipetting</h1>
+	</header>
+	<div class="container">
+		<img class="app-icon" src="152.png" alt="Sartorius Pipetting">
+		<h2>Sartorius Pipetting</h2>
+		<p>Download the app now and get started!</p>
+
+		<a class="download-link" href="https://apps.apple.com/us/app/sartorius-service-connect/id1554232112">
+            <img src="https://linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg" alt="Download on the App Store" width="220">
+		</a>
+        <a class="download-link" href="https://play.google.com/store/apps/details?id=com.sartorius.lpsservice">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="220">
+        </a>
+	</div>
+
+    <script> 
+        let agent = navigator.userAgent.toLowerCase();
+        console.log("Agent ", agent)  
+        if (agent.indexOf('iphone') >= 0) {
+            console.log("IPHONE")
+            location.replace("https://apps.apple.com/us/app/sartorius-service-connect/id1554232112");
+        } else if (agent.indexOf('android') >= 0) {
+            console.log("ANDROID")
+            location.href="https://play.app.goo.gl/?link=https://play.google.com/store/apps/details?id=com.sartorius.lpsservice";
+        }
+    </script>
+</body>
+</html>
