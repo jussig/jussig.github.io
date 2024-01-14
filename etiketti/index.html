@@ -1,229 +1,96 @@
 <!DOCTYPE html>
-<!--
-	Lens by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pyöräilijän etiketti</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-  </head>
-  <body class="is-preload-0 is-preload-1 is-preload-2">
-    <!-- Main -->
-    <div id="main">
-      <!-- Header -->
-      <header id="header">
-        <h1>Pyöräilijän etiketti</h1>
-        <ul class="icons">
-          <li>
-            <a href="#" class="icon brands fa-twitter"
-              ><span class="label">Twitter</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon brands fa-github"
-              ><span class="label">Github</span></a
-            >
-          </li>
-          <li>
-            <a href="#" class="icon fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-      </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative; /* Add relative positioning to the body */
+        }
 
-      <!-- Thumbnail -->
-      <section id="thumbnails">
-        <article>
-          <a
-            class="thumbnail"
-            href="images/fulls/01.jpg"
-            data-position="left center"
-            ><img src="images/thumbs/01.jpg" alt=""
-          /></a>
-          <h2>Pyöräilijän etiketti</h2>
-          <p>Ohjeita pyörällä ja autolla liikkuvalle</p>
-        </article>
-        <article>
-          <a class="thumbnail" href="images/fulls/02.jpg"
-            ><img src="images/thumbs/02.jpg" alt=""
-          /></a>
-          <h2>Ohjeita pyörällä liikkuvalle</h2>
-          <p>
-			<ul>
-				<li>Tunne <a href="https://pyoraliitto.fi/pyorailysta/pyorailijan-liikennesaannot" target="_blank">pyöräilijän liikennesäännöt</a> ja noudata niitä.</li>
-				<li>Pyörällä liikkuessasi olet ajoneuvon kuljettaja</li>
-				<li>Kypärän käyttö on suositeltavaa</li>
-				<li>Ole läsnä ja pidä aistisi kohdistettuna liikenteeseen</li>
-				<li>Älä aja päihtyneenä</li>
-			</ul>
-		</p>
-        </article>
-        <article>
-          <a
-            class="thumbnail"
-            href="images/fulls/03.jpg"
-            data-position="top center"
-            ><img src="images/thumbs/03.jpg" alt=""
-          /></a>
-          <h2>Ohjeita pyörällä liikkuvalle</h2>
-          <p>
-            <ul>
-              <li>Tee itsesi näkyväksi hämärällä etu- ja takavalolla sekä heijastimilla.</li>
-              <li>Maantiellä punainen on suositeltava myös päivällä.</li>
-              <li>Aja pyörätiellä, jos sellainen on - ja pyörätietä voi käyttää sujuvasti ja turvallisesti</li>
-            </ul>          
-        </p>
-        </article>
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-		 <article>
-          <a class="thumbnail" href="images/fulls/04.jpg"
-            ><img src="images/thumbs/04.jpg" alt=""
-          /></a>
-          <h2>Ohjeita pyörällä liikkuvalle</h2>
-          <p>
-            <ul>
-            <li>Ota ajoradalla pyöräillessäsi oma tilasi.</li>
-            <li>Älä aja kiinni oikeassa reunassa, jotta sinulla on tarvittaessa väistämistilaa.</li>
-            <li>Erityisesti risteyksissä ja kapeilla kaduilla keskemmällä pyöräillessäsi näyt paremmin.</li>
-            <li>Ohita pysäköidyt autot riittävän kaukaa.</li>
-            </ul>
-          </p>
-        </article>
-        <article>
-          <a
-            class="thumbnail"
-            href="images/fulls/05.jpg"
-            data-position="top center"
-            ><img src="images/thumbs/05.jpg" alt=""
-          /></a>
-          <h2>Ohjeita pyörällä liikkuvalle</h2>
-          <p>
-            <ul>
-              <li>Ota muut tienkäyttäjät huomioon ja ole kohtelias heitä kohtaan.</li>
-              <li>Hidasta ennen jalankulkijoiden kohtaamista ja ohita heidät riittävän kaukaa.</li>
-              <li>Käytä hyvissä ajoin soittokelloa, jos jalankulkija ei havaitse saapumistasi.</li>
-              <li>Älä pyöräile jalkakäytävällä.</li>
-            </ul>
-          </p>
-        </article>
-        <article>
-          <a class="thumbnail" href="images/fulls/06.jpg"
-            ><img src="images/thumbs/06.jpg" alt=""
-          /></a>
-          <h2>Ohjeita pyörällä liikkuvalle</h2>
-          <p>
-            <ul>
-              <li>Hidasta ennen risteyksiä ja ole risteyksissä muutenkin tarkkana.</li> 
-              <li>Noudata selkeitä ja johdonmukaisia ajolinjoja.</li>
-              <li>Varmista että reitti on vapaa.</li>
-              <li>Osoita aikeesi hyvissä ajoin.</li>
-              <li>Näytä kääntymismerkit (käsi sivulle) ja tarvittaessa hidastamismerkkiä (käsi ylös). 
-              <li>Älä käänny yllättäen.</li>         
-            </ul>
-          </p>
-        </article>
-        <article>
-          <a class="thumbnail" href="images/fulls/07.jpg"
-            ><img src="images/thumbs/07.jpg" alt=""
-          /></a>
-          <h2>Ohjeita pyörällä liikkuvalle</h2>
-          <p>
-            <ul>
-              <li>Aja maantiellä oikeassa laidassa.</li> 
-              <li>Anna ohittajille tarvittaessa tietä.</li>       
-            </ul>
-          </p>
-        </article>
-        <article>
-          <a class="thumbnail" href="images/fulls/08.jpg"
-            ><img src="images/thumbs/08.jpg" alt=""
-          /></a>
-          <h2>Ohjeita autolla liikkuvalle</h2>
-          <p>
-            <ul>
-              <li>Hidasta vauhtia, kun lähestyt pyörällä kulkevaa.</li> 
-              <li>Muista, että pyörällä ei välttämättä voi ajaa ajoradan reunassa tai pientareella. Reunassa voi olla irtosoraa, monttuja, huonoa asfalttia tai loskaa.</li>
-              <li>Pyörällä liikkuvat ovat ajoneuvon kuljettajia ja saavat ajaa ajoradalla, jos pyörätietä ei ole, pyörätie on vasemmalla puolella tai pyörätietä ei voi turvallisesti käyttää.</li>       
-            </ul>
-          </p>
-        </article>
-        <article>
-          <a class="thumbnail" href="images/fulls/09.jpg"
-            ><img src="images/thumbs/09.jpg" alt=""
-          /></a>
-          <h2>Ohjeita autolla liikkuvalle</h2>
-          <p>
-            <ul>
-              <li>Ohita pyöräilijä vain vastaantulevan liikenteen salliessa.</li> 
-              <li>Jätä riittävästi tilaa ohittaessasi, maantiellä vähintään 2 metriä.</li>
-              <li>Muista, että pyöräilijä voi yllättäen joutua tekemään sivuttaisliikkeitä.</li>       
-            </ul>
-          </p> 
-        </article>
-        <article>
-          <a class="thumbnail" href="images/fulls/10.jpg"
-            ><img src="images/thumbs/10.jpg" alt=""
-          /></a>
-          <h2>Ohjeita autolla liikkuvalle</h2>
-          <p>
-            <ul>
-              <li>Jätä pyörällä ajaville tilaa myös risteyksissä ja liikennevaloissa.</li> 
-            </ul>
-          </p> 
-        </article>
-        <article>
-          <a class="thumbnail" href="images/fulls/11.jpg"
-            ><img src="images/thumbs/11.jpg" alt=""
-          /></a>
-          <h2>Ohjeita autolla liikkuvalle</h2>
-          <p>
-            <ul>
-              <li>Voit nähdä liikenteessä pyöräilijöitä myös kaksi rinnan. Parijono näkyy muulle liikenteelle paremmin ja on nopeampi ohittaa.</li>
-            </ul>
-          </p>
-        </article>
-        <article>
-          <a class="thumbnail" href="images/fulls/12.jpg"
-            ><img src="images/thumbs/12.jpg" alt=""
-          /></a>
-          <h2>Maastopyöräilijän etiketti</h2>
-          <p>
-            <ul>
-              <li>Käy tutustumassa myös <a href="https://www.suomenlatu.fi/vaikuta/ohjeet-ja-etiketit/maastopyorailijan-etiketti.html" target="_blank">Maastopyöräilijän etikettiin Suomen ladun sivuilla</a>.</li>
-            </ul>
-          </p>
-        </article>
-      </section>
+        .grid {
+            max-width: 1024px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1px;
+            position: relative; /* Add relative positioning to the container */
+        }
 
-      <!-- Footer -->
-      <footer id="footer">
-        <ul class="copyright">
-          <li>&copy; Suomen Pyöräilynohjaajat ry</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
-        </ul>
-      </footer>
+        .image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            opacity: 0.60;
+        }
+
+        .title {
+            position: absolute; /* Add absolute positioning */
+            top: 50%; /* Position at the vertical center */
+            left: 50%; /* Position at the horizontal center */
+            transform: translate(-50%, -50%); /* Center the element */
+            text-align: center;
+            background-color: #FFFFFF70;
+            z-index: 1;
+            margin: 0;
+            color: black; /* Set text color to white or adjust as needed */
+        }
+
+        h1 {
+            font-size: 48px
+        }
+
+        h2 {
+            font-size: 24px
+        }
+
+        .bottomText {
+            text-align: center;
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 1em;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="grid">
+            <div class="title">
+                <h1>Pyöräilijän etiketti</h1>
+                <h2>Ohjeita pyörällä ja autolla liikkuville</h2>
+                <h3><a href="navigation.html">Jatka</a></h3>
+            </div>
+            <a href="navigation.html">
+                <img class="image" src="images/fulls/03.jpg" alt="Image 1">
+            </a>
+            <a href="navigation.html">
+                <img class="image" src="images/fulls/11.jpg" alt="Image 2">
+            </a>
+            <a href="navigation.html">
+                <img class="image" src="images/fulls/10.jpg" alt="Image 3">
+            </a>
+            <a href="navigation.html">
+                <img class="image" src="images/fulls/05.jpg" alt="Image 4">
+            </a>
+        </div>
+        <div class="bottomText">
+            <a href="navigation.html">Pyöräilijän etiketti</a> on ohje, jossa käsitellään pyörällä kulkevan toimintaa kadulla ja teillä. Maastossa pyöräilemiseen on erillinen <a href="https://www.suomenlatu.fi/vaikuta/ohjeet-ja-etiketit/maastopyorailijan-etiketti.html">Maastopyöräilijän etiketti</a>.
+        </div>
     </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+</body>
 </html>
+
