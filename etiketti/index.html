@@ -49,26 +49,42 @@
         }
 
         h1 {
-            font-size: 48px
+            font-size: 3em;
+            margin: 10px;
         }
 
         h2 {
-            font-size: 24px
+            font-size: 1.5em;
+            margin: 10px;
         }
         
+        @media screen and (min-width: 736px) {
         .bottomBar {
+            max-width: 1024px;
             text-align: center;
             font-family: "Roboto", Helvetica, sans-serif;
             font-weight: 600;
             font-size: 1em;
             position: absolute; /* Add absolute positioning */
             bottom: 5%; /* Position at the vertical center */
-            text-align: center;
             background-color: #FFFFFF70;
             z-index: 1;
             margin: 0;
             color: black; /* Set text color to white or adjust as needed */
         }
+    }
+   
+    @media screen and (max-width: 736px) {
+
+    .bottomBar {
+            text-align: center;
+            font-family: "Roboto", Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 1em;
+            margin: 0;
+            color: black; /* Set text color to white or adjust as needed */
+        }
+    }
     </style>
 </head>
 <body>
@@ -80,9 +96,7 @@
                 <h2>Ohjeita pyörällä ja autolla liikkuville</h2>
                 <h3><a href="navigation.html">Jatka</a></h3>
             </div>
-            <div class="bottomBar">
-                <a href="navigation.html">Pyöräilijän etiketti</a> on ohje, jossa käsitellään pyörällä kulkevan toimintaa kadulla ja teillä. Maastossa pyöräilemiseen on erillinen <a href="https://www.suomenlatu.fi/vaikuta/ohjeet-ja-etiketit/maastopyorailijan-etiketti.html">Maastopyöräilijän etiketti</a>, joka löytyy  <a href="https://www.suomenlatu.fi/vaikuta/ohjeet-ja-etiketit/maastopyorailijan-etiketti.html">Suomen&nbsp;Ladun&nbsp;sivuilta</a>.
-            </div>
+
             <a href="navigation.html">
                 <img class="image" src="images/fulls/03.jpg" alt="Image 1">
             </a>
@@ -97,7 +111,9 @@
             </a>
 
         </div>
-
+        <div class="bottomBar">
+            <a href="navigation.html">Pyöräilijän etiketti</a> on ohje, jossa käsitellään pyörällä kulkevan toimintaa kadulla ja teillä. Maastossa pyöräilemiseen on erillinen <a href="https://www.suomenlatu.fi/vaikuta/ohjeet-ja-etiketit/maastopyorailijan-etiketti.html">Maastopyöräilijän etiketti</a>, joka löytyy  <a href="https://www.suomenlatu.fi/vaikuta/ohjeet-ja-etiketit/maastopyorailijan-etiketti.html">Suomen&nbsp;Ladun&nbsp;sivuilta</a>.
+        </div>
     </div>
 </body>
 </html>
