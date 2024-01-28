@@ -272,7 +272,15 @@ p {
 ul {
   margin: 0 0 1.25em 0;
   color: #fff;
+  background-color: #FFFFFF20;
+
 }
+
+h2 {
+  background-color: #FFFFFF20;
+
+}
+
 
 .copyright {
   margin: 0 0 1.25em 0;
