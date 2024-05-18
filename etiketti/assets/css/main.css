@@ -1457,9 +1457,13 @@ body.is-preload-2 #viewer .slide {
   justify-content: space-between;
 }
 
-.logos img {
-  width:  90px; /* Adjust size as needed */
-  margin: 0 3px; /* Adjust spacing between logos */
+.logos a {
+ border-bottom: 0px dotted; 
+}
+.logos a img {
+  height: 70px; /* Adjust size as needed */
+  margin: 0px 2px; /* Adjust spacing between logos */
+  border: 0;
 }
 
 @media screen and (max-width: 1280px) {
