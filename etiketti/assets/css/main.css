@@ -1451,14 +1451,14 @@ body.is-preload-2 #viewer .slide {
 }
 
 .logos {
-  padding: 1em 0.75em 0em 0.75em;
+  padding: 1em 0.75em 0em 0.75em; 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .logos a {
- border-bottom: 0px dotted; 
+ border-bottom: 0px; 
 }
 .logos a img {
   height: 70px; /* Adjust size as needed */
