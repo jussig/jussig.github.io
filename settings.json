@@ -18,5 +18,8 @@ feature off in PROD and QA, not in DEV",
 can use https://workflows.pipetting.sartorius.com/",
         "FeatureCustomWorkflowEditing": false,
         "FeatureCustomReformattingEditing": false
-    }
+    },
+    "MobileApplication": {
+        "LatestVersion":"6.0.0"
+    },
 }
