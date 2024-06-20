@@ -6,5 +6,5 @@
     "FeatureCustomWorkflowEditing": false,
     "FeatureCustomReformattingEditing": false
   },
-  "MobileApplication": { "LatestVersion": "0.0.0" }
+  "MobileApplication": { "LatestVersion": "0.0.1" }
 }
