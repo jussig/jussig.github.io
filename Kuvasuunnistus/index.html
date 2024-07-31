@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Image Slider</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        /* Additional styles */
+        body, html { height: 100%; margin: 0; }
+        .swiper-container { width: 100%; height: 100%; }
+        .swiper-slide { background-size: cover; background-position: center; }
+    </style>
+</head>
+<body>
+    <script>
+        function printCurrentGeolocation() {
+            console.log("CLICKED");
+          if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+              const latitude = position.coords.latitude;
+              const longitude = position.coords.longitude;
+              console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+              // Optionally, display the coordinates on the page
+              // document.body.innerHTML += `<p>Latitude: ${latitude}, Longitude: ${longitude}</p>`;
+            }, function(error) {
+              console.error("Geolocation error: " + error.message);
+            });
+          } else {
+            console.error("Geolocation is not supported by this browser.");
+          }
+        }
+      
+        // Call the function to print the geolocation coordinates
+        printCurrentGeolocation();
+      </script>
+
+<!-- Swiper -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('01.jpg')" onclick=printCurrentGeolocation()>
+            Mun oma
+        </div>
+        <div class="swiper-slide" style="background-image:url('02.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('03.jpg')"></div>
+        <div class="swiper-slide" style="background-image:url('04.jpg')"></div>
+        <!-- Add more slides as needed -->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    effect: 'slide',
+  });
+</script>
+
+</body>
+</html>
