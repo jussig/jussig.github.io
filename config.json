@@ -1,0 +1,12 @@
+{
+    "README": "This file is loaded at startup by Sartorius Pipetting Web Application and Mobile App and can be used to specify feature switches and other configuration parameters that can be modified 'on the fly' without making new deployments of the apps. Modifications to this file can be done directly in Azure blob store in DEV-environment / pipettestorageaccount / $web container. The file is downloaded by the apps then from URL https://pipettestorageaccount.z6.web.core.windows.net/config.json. Care must be taken when editing this file since there are no validation or tests and the effects are immediate in deployed Apps. To edit the file, download local copy from Azure Portal, edit and then re-upload. This file is located in the DEV environment, but all versions of the apps (dev/qa/prod) share the same file. Feature switches typically only switch feature off in PROD and QA, not in DEV",
+    "WebApplication": {
+        "PubliclyReleased": true,
+        "PubliclyReleasedExplanation": "When true, all Sartorious ID users can use https://workflows.pipetting.sartorius.com/",
+        "FeatureCustomWorkflowEditing": true,
+        "FeatureCustomReformattingEditing": true
+    },
+    "MobileApplication": {
+        "LatestVersion": "8.0.0"
+    },
+}
