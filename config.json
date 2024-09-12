@@ -4,7 +4,8 @@
         "PubliclyReleased": true,
         "PubliclyReleasedExplanation": "When true, all Sartorious ID users can use https://workflows.pipetting.sartorius.com/",
         "FeatureCustomWorkflowEditing": true,
-        "FeatureCustomReformattingEditing": true
+        "FeatureCustomReformattingEditing": true,
+        "LatestVersion": "8.0.0"
     },
     "MobileApplication": {
         "LatestVersion": "8.0.0"
