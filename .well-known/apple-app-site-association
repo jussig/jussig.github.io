@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["WY3W6Z8KH6.fi.9solutions.smooth.lite"],
+        "components": [
+          {
+            "/": "/nfc*",
+            "comment": "Matches any path starting with /nfc"
+          }
+        ]
+      }
+    ]
+  }
+}
